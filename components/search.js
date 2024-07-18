@@ -1,5 +1,4 @@
-import find from '../public/images/icon.svg'
-import Image from "next/image"
+
 
 export default function SearchInput({className}) {
     return (<>
