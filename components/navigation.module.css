@@ -1,0 +1,12 @@
+.link {
+    @apply text-xs font-normal text-linkColor 
+}
+
+.label {
+    @apply text-[10px]
+}
+
+.input {
+    @apply border mb-4 w-full rounded-md p-2 text-userSubColor text-[10px] font-normal
+}
+

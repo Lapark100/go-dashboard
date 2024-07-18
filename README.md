@@ -1,5 +1,3 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
 First, run the development server:
@@ -13,24 +11,50 @@ pnpm dev
 # or
 bun dev
 ```
+# Project Go Dasboard README
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Overview
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+This project includes features to manage user roles and settings.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Usage
 
-## Learn More
+To view user records and manage users:
 
-To learn more about Next.js, take a look at the following resources:
+1. Navigate to the sidebar.
+2. Click on the **Users & Roles** button.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Managing Users
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+#### View User Records
 
-## Deploy on Vercel
+- Upon clicking **Users & Roles**, you can view existing user records.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+#### Add Users
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- To add a new user:
+  - Click on **Add User** button.
+  - Follow the instructions on the screen to input user details and submit the form.
+
+#### Edit Users
+
+- To edit a user:
+  - Click on **Edit** next to the user record.
+  - Update the user details as needed and submit the form.
+
+#### Delete Users
+
+- To delete a user:
+  - Click on **Remove** next to the user record.
+  - Confirm deletion when prompted.
+
+## Getting Started
+
+1. Clone the repository.
+2. Install dependencies using `npm install`.
+3. Start the development server using `npm run dev`.
+
+## Additional Notes
+
+- Ensure proper authentication and authorization mechanisms are in place for user management operations.
+- Customize styles and functionality as per project requirements.
