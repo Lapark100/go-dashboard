@@ -48,13 +48,3 @@ To view user records and manage users:
   - Click on **Remove** next to the user record.
   - Confirm deletion when prompted.
 
-## Getting Started
-
-1. Clone the repository.
-2. Install dependencies using `npm install`.
-3. Start the development server using `npm run dev`.
-
-## Additional Notes
-
-- Ensure proper authentication and authorization mechanisms are in place for user management operations.
-- Customize styles and functionality as per project requirements.
