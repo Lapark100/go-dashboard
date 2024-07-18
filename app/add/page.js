@@ -1,11 +1,15 @@
-'use client'
+'use client';
 import { useState } from 'react';
+import { useRouter } from 'next/navigation'; 
 import Link from 'next/link';
 import { createPost } from '@/lib/api';
 import styles from "@/components/navigation.module.css"
 import { EyeClosedIcon, EyeOpenIcon, PersonIcon, Cross2Icon } from '@radix-ui/react-icons';
+ 
 
 export default function AddUserForm({ onUserAdded}) {
+
+    const router = useRouter();
 
     const [email, setEmail] = useState('');
     const [fullName, setFullName] = useState('');
@@ -13,18 +17,21 @@ export default function AddUserForm({ onUserAdded}) {
     const [password, setPassword] = useState('');
     const [isVisible, setIsVisible] = useState(true)
 
+   
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         const formData = { email, fullName, role, password };
         try {
-          const newUser = await createPost(formData);
-          if (onUserAdded) {
-            onUserAdded(newUser);
-          }
+            const newUser = await createPost(formData);
+            if (onUserAdded) {
+                onUserAdded(newUser);
+            }
+            router.push('/');  
         } catch (error) {
-          console.error('Error adding user:', error);
+            console.error('Error adding user:', error);
         }
-      };
+    };
     
 
     
